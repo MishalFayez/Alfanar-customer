@@ -560,7 +560,7 @@ def page_1():
                 st.session_state.edited_df_bank = st.data_editor(
                     df_bank,
                     num_rows="dynamic",
-                    use_container_width=False,
+                    use_container_width=True,
                     hide_index=True,
                     column_config={
                         "Country": st.column_config.SelectboxColumn(
@@ -602,7 +602,7 @@ def page_1():
                 df_contact,
                 key='contact',
                 num_rows="dynamic",
-                use_container_width=False,
+                use_container_width=True,
                 hide_index=True,
                 column_config={
                     "Function": st.column_config.SelectboxColumn(
